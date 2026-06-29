@@ -4,7 +4,7 @@
   "description": "AN Psixoloji Dəstək və Reabilitasiya Mərkəzi — Autizm Skriniq Testi",
   "start_url": "/m-chat-r/",
   "scope": "/m-chat-r/",
-  "display": "browser",
+  "display": "standalone",
   "background_color": "#FAF7F2",
   "theme_color": "#7B1F2E",
   "orientation": "portrait",
@@ -28,7 +28,7 @@
       "name": "Yeni Test",
       "short_name": "Test",
       "description": "M-CHAT-R testi keç",
-      "url": "/",
+      "url": "/m-chat-r/",
       "icons": [
         {
           "src": "https://raw.githubusercontent.com/Samir210-az/an-merkezi/main/icon-192.png",
@@ -40,7 +40,7 @@
       "name": "Nəticələr",
       "short_name": "Arxiv",
       "description": "Keçirilmiş testlərə bax",
-      "url": "/results.html",
+      "url": "/m-chat-r/results.html",
       "icons": [
         {
           "src": "https://raw.githubusercontent.com/Samir210-az/an-merkezi/main/icon-192.png",
