@@ -909,6 +909,7 @@ function saveRecord(score,lvl,badge,critF,domains,desc,rec){
   all.unshift(r);
   localStorage.setItem('anMchatResults',JSON.stringify(all));
   document.getElementById('resultsLink').style.display='flex';
+  window.sgTrackTest && window.sgTrackTest('M-CHAT-R', (childData&&childData.name?childData.name+' — ':'')+score+'/20 — '+badge);
 }
 
 function saveAndView(){
@@ -948,5 +949,6 @@ document.addEventListener('DOMContentLoaded',function(){
   }
 });
 </script>
+<script type="module" src="https://samir210-az.github.io/menyu/analytics.js"></script>
 </body>
 </html>
