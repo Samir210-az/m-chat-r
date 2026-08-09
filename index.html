@@ -312,6 +312,26 @@ footer{background:#0f0a0d;color:rgba(255,255,255,.32);
   .sig-line{justify-content:center}
 }
 </style>
+<script src="license-check.js" data-tool="m-chat-r"></script>
+<script>
+(function(){
+  document.addEventListener('DOMContentLoaded', function(){
+    if(window.LICENSE && LICENSE.init){
+      LICENSE.init('#qWrap', '.ans-btn');
+    }
+    var tapEl = document.getElementById('anpLogoTap');
+    if(tapEl){
+      var tapCount = 0, tapTimer = null;
+      tapEl.addEventListener('click', function(){
+        tapCount++;
+        clearTimeout(tapTimer);
+        if(tapCount >= 5){ tapCount = 0; location.href = 'admin.html'; return; }
+        tapTimer = setTimeout(function(){ tapCount = 0; }, 900);
+      });
+    }
+  });
+})();
+</script>
 </head>
 <body class="lang-az">
 
@@ -475,7 +495,7 @@ footer{background:#0f0a0d;color:rgba(255,255,255,.32);
       <span class="ru-only">Тест скрининга аутизма</span>
       <span class="en-only">Autism Screening Test</span>
     </div>
-    <h1>
+    <h1 id="anpLogoTap" style="cursor:default">
       <span class="az-only">Autizm Skriniq <em>Testi</em></span>
       <span class="ru-only">Скрининг Аутизма <em>Тест</em></span>
       <span class="en-only">Autism Screening <em>Test</em></span>
